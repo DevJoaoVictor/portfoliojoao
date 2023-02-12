@@ -133,6 +133,7 @@ section .content p {
   align-items: center;
   justify-content: center;
   gap: 3.2rem;
+  margin-top: 3.2rem;
 }
 
 /* custom colors */
