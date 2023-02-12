@@ -415,6 +415,36 @@ body.menu-expanded button path {
   margin-block: 1.6rem;
 }
 
+/*=== PORTFOLIO =================================*/
+/* #portfolio {
+  background-color: var(--brand-beige);
+} */
+
+#portfolio header h2 {
+  margin-bottom: 2.4rem;
+}
+
+#portfolio .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+#portfolio .card {
+  padding: 2.4rem;
+  text-align: left;
+
+  background: white;
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+#portfolio .card h3 {
+  margin-block: 1.6rem;
+}
+
+
 /*=== CONTACT =================================*/
 #contact {
   text-align: left;
@@ -695,6 +725,21 @@ footer .social-links {
     width: 42rem;
   }
 
+  /*=== ABOUT =================================*/
+  #about .wrapper {
+    grid-template-columns: 48rem 1fr;
+    grid-template-areas: 'B A';
+    gap: 6.7rem;
+  }
+
+  #about .col-a {
+    align-self: center;
+  }
+
+  #about .content p {
+    margin-bottom: 0;
+  }
+
   /*=== SERVICES =================================*/
   #services h2 {
     width: 47rem;
@@ -712,19 +757,21 @@ footer .social-links {
     flex-grow: 1;
   }
 
-  /*=== ABOUT =================================*/
-  #about .wrapper {
-    grid-template-columns: 48rem 1fr;
-    grid-template-areas: 'B A';
-    gap: 6.7rem;
+  /*=== PORTFOLIO =================================*/
+  #portfolio h2 {
+    width: 47rem;
+    margin-inline: auto;
   }
 
-  #about .col-a {
-    align-self: center;
+  #portfolio .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4rem;
   }
 
-  #about .content p {
-    margin-bottom: 0;
+  #portfolio .card {
+    width: 30%;
+    flex-grow: 1;
   }
 
   /*=== CONTACT =================================*/

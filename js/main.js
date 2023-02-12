@@ -53,6 +53,9 @@ function closeMenu() {
 
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
+  autoplay: {
+    delay: 5000
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
