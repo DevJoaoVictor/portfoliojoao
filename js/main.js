@@ -70,6 +70,51 @@ const swiper = new Swiper(".mySwiper", {
   }
 })
 
+// const swiper1 = new Swiper(".Swiper-content", {
+//   slidesPerView: 1,
+//   autoplay: {
+//     delay: 5000
+//   },
+//   pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+//   },
+//   mousewheel: true,
+//   keyboard: true,
+//   breakpoints: {
+//     767: {
+//       slidesPerView: 1,
+//       setWrapperSize: true
+//     }
+//   }
+// })
+
+const swiper1 = new Swiper(".Swiper-content", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2.5,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+
+
 ScrollReveal({
   origin: 'top',
   distance: '30px',
@@ -93,9 +138,9 @@ function onScroll() {
   showBackToTopButtonOnScroll()
 
   activateMenuAtCurrentSection(home)
-  activateMenuAtCurrentSection(services)
   activateMenuAtCurrentSection(about)
-  activateMenuAtCurrentSection(contact)
+  activateMenuAtCurrentSection(services)
+  activateMenuAtCurrentSection(portfolio)
   activateMenuAtCurrentSection(contact)
 }
 
