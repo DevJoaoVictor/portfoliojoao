@@ -491,6 +491,7 @@ body.menu-expanded button path {
 /*=== CONTACT =================================*/
 #contact {
   text-align: left;
+  background-color: var(--brand-light);
 }
 
 #contact header {
