@@ -476,13 +476,13 @@ body.menu-expanded button path {
   right: 20%;
 }
 
-#portfolio .swiper-pagination-bullet {
+/* #portfolio .swiper-pagination-bullet {
   margin-bottom: 2.5rem;
 }
 
 #portfolio .swiper-pagination-bullet-active {
   background: var(--primary-color);
-}
+} */
 
 #portfolio .slider-arrow {
   color: var(--primary-color);

@@ -70,25 +70,6 @@ const swiper = new Swiper(".mySwiper", {
   }
 })
 
-// const swiper1 = new Swiper(".Swiper-content", {
-//   slidesPerView: 1,
-//   autoplay: {
-//     delay: 5000
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//   },
-//   mousewheel: true,
-//   keyboard: true,
-//   breakpoints: {
-//     767: {
-//       slidesPerView: 1,
-//       setWrapperSize: true
-//     }
-//   }
-// })
-
 const swiper1 = new Swiper(".Swiper-content", {
   effect: "coverflow",
   grabCursor: true,
@@ -103,7 +84,7 @@ const swiper1 = new Swiper(".Swiper-content", {
     slideShadows: true,
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination2",
     dynamicBullets: true,
     clickable: true,
   },
