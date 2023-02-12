@@ -447,7 +447,7 @@ body.menu-expanded button path {
   background-position: center;
   background-size: cover;
   width: 25.0rem;
-  height: 30.0rem; /* auto */
+  height: auto; /* auto */
   box-shadow: 0 1.5rem 5.0rem rgba(0,0,0,0.2);
   filter: blur(1px);
 }
