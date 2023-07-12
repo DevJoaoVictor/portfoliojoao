@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio João</title>
 
     <link rel="stylesheet" href="style/style.css" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
@@ -14,14 +16,18 @@
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <title>Portfólio João</title>
   </head>
   <body>
-    <nav id="navigation">
+    <nav id="navigation" data-aos="fade-down">
       <div class="wrapper">
         <a class="logo" href="#home">
           <svg
@@ -201,7 +207,7 @@
 
     <section id="home">
       <div class="wrapper">
-        <div class="col-a">
+        <div class="col-a" data-aos="fade-right" data-aos-delay="100">
           <header>
             <h1>BEM-VINDOS AO MEU PORTFOLIO 👋</h1>
             <h2>Desenvolvedor Web</h2>
@@ -253,40 +259,50 @@
           </div>
         </div>
 
-        <div class="col-b">
+        <div class="col-b" data-aos="fade-left" data-aos-delay="350">
           <img src="assets/Static-website.svg" alt="" />
         </div>
 
-        <div class="stats">
+        <div class="stats" data-aos="fade-up" data-aos-delay="500">
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="stat swiper-slide">
-                <h3><i class="fa-brands fa-react" style="color: #61DAFB;"></i></h3>
+                <h3>
+                  <i class="fa-brands fa-react" style="color: #61dafb"></i>
+                </h3>
                 <p>React</p>
               </div>
 
               <div class="stat swiper-slide">
-                <h3><i class="fa-brands fa-js" style="color: #fff000;"></i></h3>
+                <h3><i class="fa-brands fa-js" style="color: #fff000"></i></h3>
                 <p>JavaScript</p>
               </div>
 
               <div class="stat swiper-slide">
-                <h3><i class="fa-brands fa-node" style="color: #68a063;"></i></h3>
+                <h3>
+                  <i class="fa-brands fa-node" style="color: #68a063"></i>
+                </h3>
                 <p>NodeJs</p>
               </div>
 
               <div class="stat swiper-slide">
-                <h3><i class="fa-brands fa-html5" style="color: #ffa500;"></i></h3>
+                <h3>
+                  <i class="fa-brands fa-html5" style="color: #ffa500"></i>
+                </h3>
                 <p>Html</p>
               </div>
 
               <div class="stat swiper-slide">
-                <h3><i class="fa-brands fa-css3-alt" style="color: #1e90ff;"></i></h3>
+                <h3>
+                  <i class="fa-brands fa-css3-alt" style="color: #1e90ff"></i>
+                </h3>
                 <p>Css</p>
               </div>
 
               <div class="stat swiper-slide">
-                <h3><i class="fa-brands fa-sass" style="color: #CC6699;"></i></h3>
+                <h3>
+                  <i class="fa-brands fa-sass" style="color: #cc6699"></i>
+                </h3>
                 <p>Sass</p>
               </div>
             </div>
@@ -847,8 +863,8 @@
       </div>
     </div>
 
-    <!-- ScrollReaveal Lib -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

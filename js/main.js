@@ -140,21 +140,6 @@ buttonClose.onclick = function () {
   modal.close();
 };
 
-ScrollReveal({
-  origin: "top",
-  distance: "30px",
-  duration: 700,
-}).reveal(`
-  #home, 
-  #home img, 
-  #home .stats, 
-  #services,
-  #services header,
-  #services .card
-  #about, 
-  #about header, 
-  #about .content`);
-
 window.addEventListener("scroll", onScroll);
 function onScroll() {
   showNavOnScroll();
@@ -168,3 +153,4 @@ function onScroll() {
 }
 
 onScroll();
+AOS.init();

@@ -20,7 +20,7 @@
 
   font-size: 62.5%; /* 1rem = 10px */
 
-  --nav-height: 7.2rem;
+  --nav-height: 5.8rem;
 }
 
 html {
@@ -858,7 +858,7 @@ footer .social-links {
     background-color: var(--primary-color);
 
     position: relative;
-    bottom: -2rem;
+    top: 1rem;
     left: -0.5rem;
 
     display: block;
