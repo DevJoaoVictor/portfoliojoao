@@ -546,7 +546,7 @@ body.menu-expanded button path {
   font-size: 54px;
 }
 
-#dialog .card {
+.dialog .card {
   padding: 1rem;
   text-align: left;
   background: white;
@@ -556,7 +556,7 @@ body.menu-expanded button path {
   border-radius: 0.6rem;
 }
 
-#dialog .card p {
+.dialog .card p {
   margin-block: 1.6rem;
 }
 
@@ -573,7 +573,7 @@ dialog {
   width: 100%;
 }
 
-#dialog .card .col-b .content-button {
+.dialog .card .col-b .content-button {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -588,7 +588,7 @@ dialog {
 }
 
 
-#dialog dialog .close-button {
+.dialog dialog .close-button {
   background: var(--primary-color);
 
   cursor: pointer;
@@ -603,7 +603,7 @@ dialog {
   transition: background 200ms;
 }
 
-#dialog dialog .close-button:hover {
+.dialog dialog .close-button:hover {
   background-color: var(--brand-dark);
 }
 
@@ -1004,7 +1004,7 @@ footer .social-links {
     right: 40%;
   }
 
-  #dialog .card {
+  .dialog .card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B C';
@@ -1012,12 +1012,12 @@ footer .social-links {
     width: 100%;
   }
 
-  #dialog .card .col-a {
+  .dialog .card .col-a {
     align-self: center;
     justify-content: center;
   }
 
-  #dialog .card .col-b {
+  .dialog .card .col-b {
     align-self: center;
     justify-content: center;
     line-height: 150%;
@@ -1025,14 +1025,14 @@ footer .social-links {
     padding-top: 1.6rem;
   }
 
-  #dialog .card .col-b .content-button {
+  .dialog .card .col-b .content-button {
     display: flex;
     gap: 2rem;
     padding-top: 0.5rem;
   }
 
 
-  #dialog .card .col-c {
+  .dialog .card .col-c {
     align-self: start;
     justify-self: end;
   }

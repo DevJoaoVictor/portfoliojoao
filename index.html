@@ -600,7 +600,7 @@
                   <p>JavaScript</p>
                 </div>
               </div>
-              <button id="openModal" class="button">
+              <button class="button openModal" data-modal="modal1">
                 <i class="fa-solid fa-up-right-from-square"></i> Ver mais
               </button>
             </div>
@@ -609,17 +609,27 @@
               <img src="assets/ellosengenharia.png" alt="" />
 
               <h3>Desenvolvimento Web</h3>
-              <p>- Desenvolvimento de um site de engenharia</p>
+              <p>- tecnologias utilizadas.</p>
 
-              <a
-                class="button"
-                target="_blank"
-                href="https://engenhariaellos.com.br/"
-              >
-                site
-              </a>
+              <div class="icons-tech">
+                <div class="html">
+                  <i class="fa-brands fa-html5" style="color: #ffa500"></i>
+                  <p>Html</p>
+                </div>
 
-              <a class="button" href="#">Ver mais</a>
+                <div class="css">
+                  <i class="fa-brands fa-css3-alt" style="color: #1e90ff"></i>
+                  <p>Css</p>
+                </div>
+
+                <div class="javascript">
+                  <i class="fa-brands fa-js" style="color: #fff000"></i>
+                  <p>JavaScript</p>
+                </div>
+              </div>
+              <button class="button openModal" data-modal="modal2">
+                <i class="fa-solid fa-up-right-from-square"></i> Ver mais
+              </button>
             </div>
           </div>
 
@@ -910,9 +920,9 @@
 
     <!-- Dialog do portfolio -->
 
-    <div id="dialog">
+    <div class="dialog">
       <div class="wrapper">
-        <dialog>
+        <dialog id="modal1" id="modal">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="card swiper-slide">
@@ -923,6 +933,47 @@
                 </div>
                 <div class="col-a">
                   <img src="assets/risaengenharia.png" alt="" />
+                </div>
+
+                <div class="col-b">
+                  <p>
+                    - Desenvolvimento de um site de engenharia e segurança do
+                    trabalho, com design responsivo e otimização em SEO, Além
+                    disso, utilizei recursos interativos e de animação para
+                    aprimorar a experiência do usuário.
+                  </p>
+
+                  <div class="content-button">
+                    <a
+                      class="button"
+                      target="_blank"
+                      href="https://risaengenharia.com.br"
+                    >
+                      <i class="fa-solid fa-link"></i>
+                      site
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </dialog>
+      </div>
+    </div>
+
+    <div class="dialog">
+      <div class="wrapper">
+        <dialog id="modal2" id="modal">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="button-close">
+                  <button class="close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                  </button>
+                </div>
+                <div class="col-a">
+                  <img src="assets/ellosengenharia.png" alt="" />
                 </div>
 
                 <div class="col-b">

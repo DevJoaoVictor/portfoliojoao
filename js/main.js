@@ -125,20 +125,21 @@ copyIcon.addEventListener("click", function () {
   }, 3000);
 });
 
-const openModal = document.querySelector("#openModal");
-const modal = document.querySelector("dialog");
-const buttonClose = document.querySelector("dialog button");
-let currentScrollPosition = window.scrollY || window.pageYOffset;
+const buttons = document.querySelectorAll(".openModal");
 
-openModal.onclick = function (event) {
-  event.preventDefault();
-  currentScrollPosition;
-  modal.showModal();
-};
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const modalId = button.getAttribute("data-modal");
+    const modal = document.getElementById(modalId);
+    const buttonClose = modal.querySelector("button");
 
-buttonClose.onclick = function () {
-  modal.close();
-};
+    modal.showModal();
+
+    buttonClose.addEventListener("click", () => {
+      modal.close();
+    });
+  });
+});
 
 window.addEventListener("scroll", onScroll);
 function onScroll() {
