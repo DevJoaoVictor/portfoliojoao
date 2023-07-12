@@ -125,6 +125,21 @@ copyIcon.addEventListener("click", function () {
   }, 3000);
 });
 
+const openModal = document.querySelector("#openModal");
+const modal = document.querySelector("dialog");
+const buttonClose = document.querySelector("dialog button");
+let currentScrollPosition = window.scrollY || window.pageYOffset;
+
+openModal.onclick = function (event) {
+  event.preventDefault();
+  currentScrollPosition;
+  modal.showModal();
+};
+
+buttonClose.onclick = function () {
+  modal.close();
+};
+
 ScrollReveal({
   origin: "top",
   distance: "30px",

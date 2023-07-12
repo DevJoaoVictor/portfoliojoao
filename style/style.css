@@ -525,6 +525,87 @@ body.menu-expanded button path {
   color: var(--primary-color);
 }
 
+#portfolio .icons-tech {
+  display: flex;
+  padding-top: 2rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#portfolio .icons-tech .html, 
+#portfolio .icons-tech .css,
+#portfolio .icons-tech .javascript {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#portfolio .icons-tech i {
+  font-size: 54px;
+}
+
+#dialog .card {
+  padding: 1rem;
+  text-align: left;
+  background: white;
+  
+
+  border: 1px solid var(--brand-light);
+  border-radius: 0.6rem;
+}
+
+#dialog .card p {
+  margin-block: 1.6rem;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em rgb(0 0 0 / .3);
+  z-index: 1;
+  background-color: transparent;
+  width: 100%;
+}
+
+#dialog .card .col-b .content-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.button-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem;
+}
+
+
+#dialog dialog .close-button {
+  background: var(--primary-color);
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 0.2rem;
+
+  color: white;
+  width: 2.4rem;
+  height: 2.4rem;
+
+  transition: background 200ms;
+}
+
+#dialog dialog .close-button:hover {
+  background-color: var(--brand-dark);
+}
+
 /*=== CONTACT =================================*/
 #contact {
   text-align: left;
@@ -911,7 +992,6 @@ footer .social-links {
 
   #portfolio .card {
     width: 30%;
-    flex-grow: 1;
   }
 
   #portfolio .swiper-button-prev {
@@ -920,6 +1000,39 @@ footer .social-links {
   
   #portfolio .swiper-button-next {
     right: 40%;
+  }
+
+  #dialog .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B C';
+    gap: 2rem;
+    width: 100%;
+  }
+
+  #dialog .card .col-a {
+    align-self: center;
+    justify-content: center;
+  }
+
+  #dialog .card .col-b {
+    align-self: center;
+    justify-content: center;
+    line-height: 150%;
+    letter-spacing: 0.1rem;
+    padding-top: 1.6rem;
+  }
+
+  #dialog .card .col-b .content-button {
+    display: flex;
+    gap: 2rem;
+    padding-top: 0.5rem;
+  }
+
+
+  #dialog .card .col-c {
+    align-self: start;
+    justify-self: end;
   }
 
   /*=== CONTACT =================================*/
