@@ -300,6 +300,10 @@ body.menu-expanded button path {
   z-index: -1;
 }
 
+#home h2 {
+  font-size: 2.4rem;
+}
+
 #home p {
   font-size: 1.8rem;
   line-height: 150%;
@@ -545,6 +549,20 @@ body.menu-expanded button path {
   gap: 0.8rem;
 }
 
+#contact .clipBoard {
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+#contact .clipBoard i {
+  color: var(--primary-color);
+}
+
 #contact .col-b {
   padding-top: 4rem;
 }
@@ -776,6 +794,11 @@ footer .social-links {
   #home .col-a {
     text-align: left;
     align-self: center;
+  }
+
+  #home h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
   }
 
   #home .content p {
