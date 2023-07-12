@@ -584,6 +584,17 @@ body.menu-expanded button path {
   opacity: 1;
 }
 
+#contact .content-button {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+  margin-top: 5rem;
+}
+
+#contact .button i {
+  font-size: 1.8rem;
+}
+
 #contact .col-b {
   padding-top: 4rem;
 }
