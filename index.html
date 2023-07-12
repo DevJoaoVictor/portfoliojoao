@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio João" />
 
     <link rel="stylesheet" href="style/style.css" />
 
@@ -29,7 +30,7 @@
   <body>
     <nav id="navigation" data-aos="fade-down">
       <div class="wrapper">
-        <a class="logo" href="#home">
+        <a class="logo" href="#home" aria-label="Portfolio João">
           <svg
             width="138"
             height="18"
@@ -64,7 +65,10 @@
 
           <ul class="social-links">
             <li>
-              <a target="_blank" href="https://instagram.com"
+              <a
+                target="_blank"
+                href="https://instagram.com"
+                aria-label="Instagram"
                 ><svg
                   width="24"
                   height="24"
@@ -97,7 +101,11 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://facebook.com">
+              <a
+                target="_blank"
+                href="https://facebook.com"
+                aria-label="Facebook"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -116,7 +124,11 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://youtube.com">
+              <a
+                target="_blank"
+                href="https://youtube.com"
+                aria-label="Youtube"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -578,9 +590,9 @@
                   <p>JavaScript</p>
                 </div>
               </div>
-              <a id="openModal" class="button" href="#">
-                <i class="fa-solid fa-up-right-from-square"></i> Ver mais</a
-              >
+              <button id="openModal" class="button">
+                <i class="fa-solid fa-up-right-from-square"></i> Ver mais
+              </button>
             </div>
 
             <div class="card swiper-slide">
@@ -676,11 +688,11 @@
 
                 <span id="email">contato@Portfoliojoao.com</span>
 
-                <a class="clipBoard">
+                <button class="clipBoard" aria-label="Botão de copiar">
                   <i id="copy-icon" class="fa-solid fa-copy"></i>
 
                   <span class="tooltip-text">Copiar</span>
-                </a>
+                </button>
               </li>
             </ul>
 
@@ -743,7 +755,7 @@
     <footer>
       <div class="wrapper">
         <div class="col-a">
-          <a class="logo" href="#home">
+          <a class="logo" href="#home" aria-label="Portfolio João">
             <svg
               width="138"
               height="18"
@@ -849,7 +861,7 @@
       </div>
     </footer>
 
-    <a id="backToTopButton" href="#home">
+    <a id="backToTopButton" href="#home" aria-label="Ir para o topo da pagina">
       <svg
         width="40"
         height="40"
