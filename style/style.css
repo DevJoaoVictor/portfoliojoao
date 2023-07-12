@@ -40,8 +40,6 @@ body {
 
   text-align: center;
 
-  overflow: overlay;
-
   background-color: var(--bg-light);
 }
 
@@ -285,6 +283,7 @@ body.menu-expanded button path {
 #home {
   padding-block: 0;
   padding-top: calc(4.1rem + var(--nav-height));
+  overflow: hidden;
 }
 
 #home::before {
@@ -321,8 +320,8 @@ body.menu-expanded button path {
 }
 
 #home .content-button {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 1.6rem;
   margin-bottom: 2rem;
 }
@@ -678,8 +677,13 @@ dialog {
   font-size: 1.8rem;
 }
 
+#contact {
+  overflow: hidden;
+}
+
 #contact .col-b {
   padding-top: 4rem;
+  overflow: hidden;
 }
 
 /*=== FOOTER =================================*/
@@ -918,10 +922,6 @@ footer .social-links {
 
   #home .content p {
     font-size: 1.8rem;
-  }
-
-  #home .content-button {
-    display: flex;
   }
 
   #home .stats {
