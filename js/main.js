@@ -93,6 +93,38 @@ const swiper1 = new Swiper(".Swiper-content", {
   },
 });
 
+let copyIcon = document.getElementById("copy-icon");
+let email = document.getElementById("email");
+let tooltipText = document.querySelector(".tooltip-text");
+
+copyIcon.addEventListener("click", function () {
+  let tempElement = document.createElement("textarea");
+  tempElement.value = email.textContent;
+
+  document.body.appendChild(tempElement);
+
+  tempElement.select();
+  tempElement.setSelectionRange(0, 99999);
+
+  document.execCommand("copy");
+
+  document.body.removeChild(tempElement);
+
+  copyIcon.classList.remove("fa-copy");
+  copyIcon.classList.add("fa-check");
+  copyIcon.setAttribute("aria-label", "Copiado");
+
+  tooltipText.textContent = "Copiado";
+
+  setTimeout(function () {
+    copyIcon.classList.remove("fa-check");
+    copyIcon.classList.add("fa-copy");
+    copyIcon.setAttribute("aria-label", "Copiar");
+
+    tooltipText.textContent = "Copiar";
+  }, 3000);
+});
+
 ScrollReveal({
   origin: "top",
   distance: "30px",

@@ -557,10 +557,31 @@ body.menu-expanded button path {
   border: 0.1rem solid var(--primary-color);
   border-radius: 0.8rem;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact .clipBoard i {
   color: var(--primary-color);
+}
+
+#contact .clipBoard .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  margin-top: 7rem;
+  padding: 6px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--bg-light);
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+#contact .clipBoard:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 #contact .col-b {
